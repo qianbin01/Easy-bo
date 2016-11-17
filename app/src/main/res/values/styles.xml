@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/App_color</item>
+        <item name="colorPrimaryDark">@color/App_color</item>
+        <item name="colorAccent">@color/App_color</item>
+        <item name="titleTextColor">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar.Translucent">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="MusicController_SeekBar" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:minHeight">13dip</item>
+        <item name="android:maxHeight">13dip</item>
+        <item name="android:thumb">@drawable/scrubber_control_selector_holo</item>
+        <item name="android:thumbOffset">16dip</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+
+</resources>

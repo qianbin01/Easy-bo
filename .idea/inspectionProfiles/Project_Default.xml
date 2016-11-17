@@ -1,0 +1,65 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <option name="myLocal" value="true" />
+    <inspection_tool class="AndroidLintContentDescription" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintDrawAllocation" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintGradleCompatible" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintHandlerLeak" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintInflateParams" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintInlinedApi" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintMockLocation" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintNestedWeights" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintNewApi" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintNotSibling" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintRecycle" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintRecyclerView" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintRelativeOverlap" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintRtlHardcoded" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintSetJavaScriptEnabled" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintSetTextI18n" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintSimpleDateFormat" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintStaticFieldLeak" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintUnusedAttribute" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AndroidLintUselessParent" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="ConstantConditions" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="SUGGEST_NULLABLE_ANNOTATIONS" value="false" />
+      <option name="DONT_REPORT_TRUE_ASSERT_STATEMENTS" value="false" />
+    </inspection_tool>
+    <inspection_tool class="Deprecation" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="FieldCanBeLocal" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="IgnoreResultOfCall" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="m_reportAllNonLibraryCalls" value="false" />
+      <option name="callCheckString" value="java.io.File,.*,java.io.InputStream,read|skip|available|markSupported,java.io.Reader,read|skip|ready|markSupported,java.lang.Boolean,.*,java.lang.Byte,.*,java.lang.Character,.*,java.lang.Double,.*,java.lang.Float,.*,java.lang.Integer,.*,java.lang.Long,.*,java.lang.Math,.*,java.lang.Object,equals|hashCode|toString,java.lang.Short,.*,java.lang.StrictMath,.*,java.lang.String,.*,java.math.BigInteger,.*,java.math.BigDecimal,.*,java.net.InetAddress,.*,java.net.URI,.*,java.util.UUID,.*,java.util.regex.Matcher,pattern|toMatchResult|start|end|group|groupCount|matches|find|lookingAt|quoteReplacement|replaceAll|replaceFirst|regionStart|regionEnd|hasTransparantBounds|hasAnchoringBounds|hitEnd|requireEnd,java.util.regex.Pattern,.*" />
+    </inspection_tool>
+    <inspection_tool class="LoggerInitializedWithForeignClass" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="loggerClassName" value="org.apache.log4j.Logger,org.slf4j.LoggerFactory,org.apache.commons.logging.LogFactory,java.util.logging.Logger" />
+      <option name="loggerFactoryMethodName" value="getLogger,getLogger,getLog,getLogger" />
+    </inspection_tool>
+    <inspection_tool class="LoopStatementsThatDontLoop" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MismatchedArrayReadWrite" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="ResourceType" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+    <inspection_tool class="SynchronizationOnLocalVariableOrMethodParameter" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="reportLocalVariables" value="true" />
+      <option name="reportMethodParameters" value="true" />
+    </inspection_tool>
+    <inspection_tool class="UNCHECKED_WARNING" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="unused" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="LOCAL_VARIABLE" value="true" />
+      <option name="FIELD" value="true" />
+      <option name="METHOD" value="true" />
+      <option name="CLASS" value="true" />
+      <option name="PARAMETER" value="true" />
+      <option name="REPORT_PARAMETER_FOR_PUBLIC_METHODS" value="true" />
+      <option name="ADD_MAINS_TO_ENTRIES" value="true" />
+      <option name="ADD_APPLET_TO_ENTRIES" value="true" />
+      <option name="ADD_SERVLET_TO_ENTRIES" value="true" />
+      <option name="ADD_NONJAVA_TO_ENTRIES" value="true" />
+    </inspection_tool>
+  </profile>
+</component>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@style/MusicController_SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/seekBar"
+            android:layout_marginTop="15dp"
+            android:background="@color/App_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivLast"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/last" />
+
+            <ImageView
+                android:id="@+id/ivBackward"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/backward" />
+
+            <ImageView
+                android:id="@+id/ivPause"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/play" />
+
+            <ImageView
+                android:id="@+id/ivForward"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/forward" />
+
+            <ImageView
+                android:id="@+id/ivNext"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/next" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvTIme1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rlBottom"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/_00_00" />
+
+    <TextView
+        android:id="@+id/tvTIme2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rlBottom"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rlBottom"
+        android:layout_below="@id/toolbar">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/App_color"
+            android:textSize="20sp"
+            android:transitionName="transtion_title" />
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/tvTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/cd" />
+
+        <TextView
+            android:id="@+id/tvArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/ivImage"
+            android:layout_marginEnd="20sp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/operation_volume_brightness"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/videobg"
+        android:orientation="horizontal"
+        android:padding="0dip"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/operation_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/video_volumn_bg" />
+
+        <TextView
+            android:id="@+id/operation_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/operation_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
