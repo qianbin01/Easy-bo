@@ -11,7 +11,8 @@ import android.widget.TextView;
 
 import com.qb.easy_bo.R;
 import com.qb.easy_bo.bean.LocalMusic;
-import com.qb.easy_bo.utils.MediaUtil;
+import com.qb.easy_bo.utils.common.CacheUtil;
+import com.qb.easy_bo.utils.common.MediaUtil;
 
 import java.util.List;
 
@@ -53,7 +54,7 @@ public class LocalMusicAdapter extends RecyclerView.Adapter<LocalMusicAdapter.Vi
         holder.tvTitle.setText(music.getTitle());
         holder.tvArtist.setText(music.getArtist());
         holder.tvTime.setText(MediaUtil.getMinuteTime(music.getLength()));
-        holder.tvSize.setText(MediaUtil.getMbSize(music.getSize() / 1048576.0) + ".MB");
+        holder.tvSize.setText(CacheUtil.getFormatSize(music.getSize()));
         holder.rlMusic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

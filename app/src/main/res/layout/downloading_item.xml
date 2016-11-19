@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/rlDownloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#212121"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#212121"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@id/tvLength"
+            android:textColor="#212121"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginTop="10dp"
+            android:textColor="#212121"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/tvSpeed"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/seekBar"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/btn_bg"
+            android:text="@string/stop"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/seekBar"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/btnStop"
+            android:background="@drawable/btn_bg"
+            android:text="@string/pause"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

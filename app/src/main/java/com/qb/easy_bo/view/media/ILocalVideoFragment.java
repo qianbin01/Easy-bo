@@ -38,14 +38,6 @@ public class ILocalVideoFragment extends Fragment implements ILocalView<LocalVid
     private List<LocalVideo> mList;
     private LocalVideoAdapter mAdapter;
 
-    public static ILocalVideoFragment newInstance(int type) {
-        Bundle args = new Bundle();
-        ILocalVideoFragment fragment = new ILocalVideoFragment();
-        args.putInt("type", type);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

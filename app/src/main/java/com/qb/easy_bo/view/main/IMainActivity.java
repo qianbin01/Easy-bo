@@ -14,7 +14,9 @@ import com.qb.easy_bo.R;
 import com.qb.easy_bo.presenter.main.IMainPresenter;
 import com.qb.easy_bo.presenter.main.IMainPresenterImpl;
 import com.qb.easy_bo.view.about.IAboutFragment;
+import com.qb.easy_bo.view.download.IDownloadFragmentList;
 import com.qb.easy_bo.view.media.IMediaFragmentList;
+import com.qb.easy_bo.view.setting.ISettingFragment;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -57,19 +59,19 @@ public class IMainActivity extends AppCompatActivity implements IMainView {
     }
     @Override
     public void switch2Medias() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new IMediaFragmentList(),"media").commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new IMediaFragmentList()).commit();
         mToolbar.setTitle(R.string.media);
     }
 
     @Override
     public void switch2Downloads() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new IMediaFragmentList()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new IDownloadFragmentList()).commit();
         mToolbar.setTitle(R.string.download);
     }
 
     @Override
     public void switch2Settings() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new IMediaFragmentList()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new ISettingFragment()).commit();
         mToolbar.setTitle(R.string.setting);
     }
 

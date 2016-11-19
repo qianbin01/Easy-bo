@@ -12,7 +12,8 @@ import android.widget.TextView;
 
 import com.qb.easy_bo.R;
 import com.qb.easy_bo.bean.LocalVideo;
-import com.qb.easy_bo.utils.MediaUtil;
+import com.qb.easy_bo.utils.common.CacheUtil;
+import com.qb.easy_bo.utils.common.MediaUtil;
 
 import java.util.List;
 
@@ -52,7 +53,7 @@ public class LocalVideoAdapter extends RecyclerView.Adapter<LocalVideoAdapter.Vi
             return;
         }
         holder.tvTitle.setText(video.getVideoName());
-        holder.tvSize.setText(MediaUtil.getMbSize(video.getSize() / 1048576.0) + ".MB");
+        holder.tvSize.setText(CacheUtil.getFormatSize(video.getSize()));
         holder.ivImage.setImageBitmap(video.getImage());
         holder.rlMusic.setOnClickListener(new View.OnClickListener() {
             @Override

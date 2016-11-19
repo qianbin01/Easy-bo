@@ -41,13 +41,6 @@ public class ILocalMusicFragment extends Fragment implements ILocalView<LocalMus
     private List<LocalMusic> mList;
     private LocalMusicAdapter mAdapter;
 
-    public static ILocalMusicFragment newInstance(int type) {
-        Bundle args = new Bundle();
-        ILocalMusicFragment fragment = new ILocalMusicFragment();
-        args.putInt("type", type);
-        fragment.setArguments(args);
-        return fragment;
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

@@ -4,7 +4,7 @@ package com.qb.easy_bo.model.media;
 import android.os.Environment;
 
 import com.qb.easy_bo.bean.LocalVideo;
-import com.qb.easy_bo.utils.MediaUtil;
+import com.qb.easy_bo.utils.common.MediaUtil;
 
 import java.util.ArrayList;
 import java.util.List;

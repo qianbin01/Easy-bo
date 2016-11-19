@@ -25,7 +25,7 @@ import android.widget.TextView;
 
 import com.qb.easy_bo.R;
 import com.qb.easy_bo.bean.LocalMusic;
-import com.qb.easy_bo.utils.MediaUtil;
+import com.qb.easy_bo.utils.common.MediaUtil;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

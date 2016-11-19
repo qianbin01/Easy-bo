@@ -7,6 +7,12 @@
     <string name="about">相关</string>
     <string name="open">open</string>
     <string name="close">close</string>
+    <string name="stop">停止</string>
+    <string name="start">开始</string>
+    <string name="pause">暂停</string>
+    <string name="downloading">正在下载</string>
+    <string name="downloadFinished">下载完成</string>
+    <string name="sure">确认</string>
     <string name="local_music">本地音乐</string>
     <string name="local_video">本地视频</string>
     <string name="network">网络资源</string>
@@ -16,5 +22,9 @@
     <string name="aboutAuthor">从什么都不会，到每天进步一点点，然后看看过去的自己，就足够装逼了</string>
     <string name="welcome">用户的浏览和使用是我进步(装逼)的动力之一</string>
     <string name="csdn">csdn地址:http://blog.csdn.net/hold_bin?viewmode=contents</string>
-    <string name="github">github地址:https://github.com/qianbin01/SimpleDemo 欢迎多多star</string>
+    <string name="github">github地址:https://github.com/qianbin01/Easy-bo 欢迎多多star</string>
+    <string name="wifi">仅wifi环境下载</string>
+    <string name="cache">清理缓存</string>
+    <string name="enter_url">请输入下载地址</string>
+    <string name="max_task">最大下载数</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.qb.easy_bo.view.media;
+package com.qb.easy_bo.view.download;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -18,8 +18,7 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-
-public class IMediaFragmentList extends Fragment {
+public class IDownloadFragmentList extends Fragment {
     @Bind(R.id.tab_layout)
     TabLayout mTablayout;
     @Bind(R.id.viewpager)
@@ -27,12 +26,11 @@ public class IMediaFragmentList extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.videos_fragment, null);
+        View view = inflater.inflate(R.layout.downloads_fragment, null);
         ButterKnife.bind(this, view);
         setupViewPager(mViewPager);
-        mTablayout.addTab(mTablayout.newTab().setText(R.string.local_music));
-        mTablayout.addTab(mTablayout.newTab().setText(R.string.local_video));
-        mTablayout.addTab(mTablayout.newTab().setText(R.string.network));
+        mTablayout.addTab(mTablayout.newTab().setText(R.string.downloading));
+        mTablayout.addTab(mTablayout.newTab().setText(R.string.downloadFinished));
         mTablayout.setupWithViewPager(mViewPager);
         return view;
     }
@@ -40,9 +38,8 @@ public class IMediaFragmentList extends Fragment {
     private void setupViewPager(ViewPager mViewPager) {
         //Fragment中嵌套使用Fragment一定要使用getChildFragmentManager(),否则会有问题
         MyPagerAdapter adapter = new MyPagerAdapter(getChildFragmentManager());
-        adapter.addFragment(new ILocalMusicFragment(), getResources().getString(R.string.local_music));
-        adapter.addFragment(new ILocalVideoFragment(), getResources().getString(R.string.local_video));
-        adapter.addFragment(new INetWorkFragment(), getResources().getString(R.string.network));
+        adapter.addFragment(new IDownloadingFragment(), getResources().getString(R.string.downloading));
+        adapter.addFragment(new IDownloadFinishFragment(), getResources().getString(R.string.downloadFinished));
         mViewPager.setAdapter(adapter);
     }
 

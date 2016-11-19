@@ -45,13 +45,6 @@ public class INetWorkFragment extends Fragment implements INetWorkView {
     private NetWorkVideoAdapter mAdapter;
     private LinearLayoutManager mLayoutManager;
 
-    public static INetWorkFragment newInstance(int type) {
-        Bundle args = new Bundle();
-        INetWorkFragment fragment = new INetWorkFragment();
-        args.putInt("type", type);
-        fragment.setArguments(args);
-        return fragment;
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

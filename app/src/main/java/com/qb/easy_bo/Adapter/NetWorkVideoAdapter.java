@@ -11,9 +11,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.qb.easy_bo.R;
-import com.qb.easy_bo.bean.LocalMusic;
 import com.qb.easy_bo.bean.NetWorkVideo;
-import com.qb.easy_bo.utils.MediaUtil;
 
 import java.util.List;
 
