@@ -6,4 +6,4 @@
 csdn地址：http://blog.csdn.net/hold_bin/article/details/53228556
 
 
-个人位置地址:http://qbfighting.cc
+个人博客地址:http://qbfighting.cc
