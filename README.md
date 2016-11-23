@@ -3,4 +3,7 @@
 
 有意见或建议，以及bug发现欢迎邮件至236490794@qq.com
 
-csdnl地址：http://blog.csdn.net/hold_bin/article/details/53228556
+csdn地址：http://blog.csdn.net/hold_bin/article/details/53228556
+
+
+个人位置地址:http://qbfighting.cc
